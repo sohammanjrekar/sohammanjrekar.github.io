@@ -51,6 +51,8 @@ span.wave {
 }.first-image{
     position: absolute;
     right:0;
+    margin-left: 50%;
+    
 }
 .boyimage{
   height: 50vh;
