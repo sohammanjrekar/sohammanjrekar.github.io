@@ -53,7 +53,7 @@ span.wave {
     right:0;
 }
 .boyimage{
-  height: 400px;
+  height: 50vh;
 }@media only screen and (max-width : 1183px){
   .first-image{
     right:160px;
