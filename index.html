@@ -1,173 +1,486 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Soham's Portfolio</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-  <link rel="icon" href="Image/Soham.gif">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: black;color: rgb(255 255 255);">
-      <a class="navbar-brand brand-name" href="#" style="font-size: x-large;">
-        <img src="Image/Soham.gif" alt="" style="height: 15vh;">
-      Soham Manjrekar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
-        <span class="navbar-toggler-icon" style="background-color: #2568FB;"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto" >
-          <li class="nav-item" >
-            <a class="nav-link headerachor" href="index.html"style="font-size: medium;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="Education.html" style="font-size: medium;">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="skill.html" style="font-size: medium;">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="Project.html" style="font-size: medium;">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="contact.html" style="font-size: medium;">Contact Me</a>
-          </li>
-        </ul>
-    </nav>
-  </header>
-  <section id="Home">
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162313419-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-162313419-1");
+		</script>
+		<!-- Google Analytics Ends  -->
+		<title>Soham's portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/icon.png" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+		<link rel="stylesheet" href="css/grid.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Loader screen -->
+		<div class="se-pre-con"></div>
+		<!-- Loader Screen Ends -->
 
-    <div class="row column1" style="background-color: #FECD45;flex-direction: column;">
+		<!-- Navbar Starts  -->
+		<nav class="navbar">
+			<div class="container">
+				<a href="#home" class="navbar-brand">
+					<h1>Soham's portfolio</h1>
+				</a>
+				<div class="toggle">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="navbar-nav">
+					<a href="#home" class="nav-item">Home</a>
+					<a href="#about" class="nav-item">About</a>
+					<a href="#skills" class="nav-item">Skills</a>
+					<a href="#work" class="nav-item">Education</a>
+					<a href="#contact" class="nav-item">Contact</a>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar Ends  -->
+		<!-- Home starts  -->
+		<section>
+			<div class="parallax" id="home">
+				<div class="container-fluid home">
+					<div class="row">
+						<div class="col-12 typing">
+							<div id="typed-strings">
+								<h2>Hi, I am Soham.</h2>
+								<h2>I am a Full Stack Developer.</h2>
+								<h2>I Love Coding.</h2>
+							</div>
+							<span id="typed"></span>
+						</div>
+						<div class="col-12 subtitle">
+							<p>
+								If you need a Website, then
+								<a href="mailto:mrsohammanjrekar@gmail.com">email</a>
+								me may be.
+							</p>
+						</div>
+						<div class="col-12">
+							<div class="siema">
+								<div>
+									<img alt="Sample Work" src="img/home/1.gif" />
+								</div>
+								<div>
+									<img alt="Sample Work" src="img/home/2.gif" />
+								</div>
+								<div>
+									<img alt="Sample Work" src="img/home/11.gif" />
+								</div>
+								<div>
+									<img alt="Sample Work" src="img/home/4.gif" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Home Ends  -->
+		<!-- About Starts  -->
+		<section>
+			<div class="container about" id="about">
+				<div class="row">
+					<div class="col-12">
+						<h2>About Me</h2>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="about-card wow backInLeft">
+							<span class="iconify" data-icon="mdi:responsive" data-inline="false"></span>
+							<p>Web developer</p>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="about-card wow backInLeft" data-wow-delay="0.2s">
+							<span class="iconify" data-icon="ic:baseline-design-services" data-inline="false"></span>
+							<p>Programmer</p>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="about-card wow backInLeft" data-wow-delay="0.4s">
+							<span class="iconify" data-icon="ion:rocket-outline" data-inline="false"></span>
+							<p>App Developer</p>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="about-card wow backInLeft" data-wow-delay="0.6s">
+							<span class="iconify" data-icon="whh:seo" data-inline="false"></span>
+							<p>seo Developer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Ends  -->
+		<!-- My skills Starts  -->
+		<section>
+			<div class="container-fluid skills" id="skills">
+				<div class="row">
+					<div class="col-12">
+						<h2>Most Used languages</h2>
+					</div>
+					<div class="col-12">
+						<div class="skill">
+							<div>
+								<img alt="HTML5" src="img/skills/html-5.svg" />
+								<p>HTML5</p>
+							</div>
+							<div>
+								<img alt="CSS3" src="img/skills/css3.svg" />
+								<p>CSS3</p>
+							</div>
+							<div>
+								<img alt="CSS3" src="img/skills/pocoo_flask-icon.svg" />
+								<p>Flask</p>
+							</div>
+							<div>
+								<img alt="BootStrap" src="img/skills/bootstrap.svg" />
+								<p>BootStrap</p>
+							</div>
+							<div>
+								<img alt="JavaScript" src="img/skills/js.svg" />
+								<p>JavaScript</p>
+							</div>
+							<div>
+								<img alt="CSS3" src="img/skills/mysql-icon.svg" />
+								<p>MySQL</p>
+							</div>
+							<div>
+								<img alt="CSS3" src="img/skills/php-icon.svg" />
+								<p>php</p>
+							</div>
 
-      <div class="col-lg-6 col-md-6 first-image">
-        <img class="boyimage" src="Image/python-2.gif" alt="">
-      </div>
 
-      <div class="col-lg-6 section-1">
-        <h1 class="Hello" style="font-size: larger;">Hello All! My name is Soham <span class="wave">👋🏽</span>
-          And I'm <span class="typing" style="color: #2568FB;"></span></h1>
-        <p style="color: white; font-weight: 900;font-size: medium;">Self-driven, quick starter, passionate programmer
-          with a curious mind who enjoys solving a complex and challenging real-world problems
-        </p>
-        <div class=social_media_icon>
-          <a class="btn" href="https://www.instagram.com/mrsohammanjrekar/" target=_blank>
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a class="btn" href="https://www.linkedin.com/in/soham-manjrekar-279a71184/" target=_blank>
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a class="btn" href="https://github.com/sohammanjrekar" target=_blank>
-            <i class="fab fa-github"></i>
-          </a>
-          <a class="btn" href="mailto:mrsohammanjrekar@gmail.com" target=_blank>
-            <i class="fab fa-google"></i>
-          </a>
-        </div>
-      </div>
+							<div>
+								<img alt="React JS" src="img/skills/python-icon.svg" />
+								<p>Python</p>
+							</div>
+							<div>
+								<img alt="jQuery" src="img/skills/jquery.svg" />
+								<p>jQuery</p>
+							</div>
+							<div>
+								<img alt="Django" src="img/skills/django.svg" />
+								<p>Django</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- My skills Ends  -->
+		<!-- My Work Start  -->
+		<section>
+			<div class="container work" id="work">
+				<div class="row">
+					<div class="col-12">
+						<h2>My Work</h2>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp">
+							<img src="img/work/cc.png" alt="" />
+							<div class="overlay">
+								<a href="" target="blank" class="text">Visit</a>
+							</div>
+						</div>
+						<div class="title">Currency Converter Website</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.1s">
+							<img src="https://th.bing.com/th/id/OIP.NDmBzdVz-7Z8f-DrwEfl3gHaEo?pid=ImgDet&rs=1" alt="" />
+							<div class="overlay">
+								<a href="" target="blank" class="text">Visit</a>
+							</div>
+						</div>
+						<div class="title">E-commerce website</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.2s">
+							<img src="https://i.ytimg.com/vi/Q65ULG1N7UA/maxresdefault.jpg" alt="" />
+							<div class="overlay">
+								<a
+									href=""
+									target="blank"
+									class="text"
+									>Visit</a
+								>
+							</div>
+						</div>
+						<div class="title">Calculator in java</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- My Work Ends  -->
+		
 
-      <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt="">
-      </div>
-    </div>
-  </section>
-  <hr style="background-color: #2568FB;">
-  <section id=Whatido>
-    <h1 style="font-size: xx-large;">What I Do ?</h1>
-    <div class="row feature-1">
-      <div class="col-lg-6 col-md-6 Feature-first-image ">
-        <img class="Feature-svg-image" src="Image/3.gif" alt="">
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <h1 class="Feature-Heading">Data Analytics & ML</h1>
-        <ul class="dev-icon">
-          <li><i class="fab fa-python fa-5x" style="color:#3776ab"></i></li>
-          <li><img class="numpy" src="Image/numpy-ar21.svg" alt=""></li>
-          <li><img class="pandas" src="Image/kindpng_5747046.png" alt=""></li>
-        </ul>
-        <div class="Data-Analytic">
-          <p class="Features-paragraph" style="font-size: medium;">
-            💥 Developing Models that cleaning, tranforming and analyse Raw data to discover useful informations,
-            in order to make conclusions about the informations.</p>
-          <p class="Features-paragraph" style="font-size: medium;">
-            💥 Experience of working with different python Libraries like Numpy,Pandas,Matplotlib,Seaborn etc and have
-            knowlege of
-            Data analyitical algorithm and techniques.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row feature-2">
-      <div class="col-lg-6 col-md-6 feature-web">
-        <h1 class="Feature-Heading">Web Development</h1>
-        <ul class="dev-icon">
-          <li><i class="fab fa-html5 fa-5x" style="color:#e34f26"></i></li>
-          <li><i class="fab fa-css3-alt fa-5x" style="color:#1572b6"></i></li>
-          <li><i class="fab fa-bootstrap fa-5x" style="color:#543b79"></i></li>
-          <li><i class="fab fa-js-square fa-5x" style="color:#f7df1e"></i></li>
-          <li><i class="fab fa-react fa-5x" style="color:#61dafb"></i></li>
-         </ul>
-        <div class="Data-Analytic" style="padding-top: 5vh;">
-          <p class="Features-paragraph" style="font-size: medium;">
-            💥 Building Fully responsive website front end using HTML, CSS, Bootstrap and Javascript.</p>
-          <p class="Features-paragraph" style="font-size: medium;">
-            💥 As of now I have knowledge only of front end but in near future I will add more features to myself and
-            excited to explore React , NodeJS, Django , Flask and many more.</p>
-          <p class="Features-paragraph" style="font-size: medium;">
-            💥 I have also used Abode Photoshop, Illustrator and Figma to design User interface of websites and mobile
-            application and design of logos.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 Feature-second-image ">
-        <img class="Feature-svg-image" src="Image/2.gif" alt="" style="height: 70vh;">
-      </div>
-    </div>
-    <div class="row feature-3">
-      <div class="col-lg-6 col-md-6 Feature-third-image">
-        <img class="Feature-svg-image-3" src="Image/coding-freak.gif" alt="">
-      </div>
-      <div class="col-lg-6 col-md-6 feature-coding">
-        <h1 class="Feature-Heading">Data Structure and Algorithms</h1>
-        <ul class="dev-icon">
-          <li></li>
-          <li><i class="fas fa-laptop-code fa-4x"></i></li>
-          <li><i class="fas fa-file-code fa-4x" style="color: #a8afcb;"></i></li>
-        </ul>
-        <div class="Data-Analytic" style="padding-top: 5vh;">
-          <p class="Features-paragraph" style="font-size: medium;">
-            💥 I have knowledge of Data Structure like Hash Tables, Trees, Tries, Graphs, and various algorithms for
-            solving various problems efficiently.</p>
-          <p class="Features-paragraph"  style="font-size: medium;">
-            💥 As I know Data Structure and Algorithms are the heart of programming, So I loves to solve programming
-            question in different competitive website like codeforce,codechef,hackerrank and many more.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class=footer style="color: #2568FB; font-size: 25px;background-color: black;
-  width: 100%">Made with ❤️ by Soham manjrekar</footer>
-  <script>
-    // typing text animation script
-    var typed = new Typed(".typing", {
-      strings: ["Developer.", "Learner.", "Programmer.", "Student."],
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true
-    });
-  </script>
-</body></html>
+
+
+		<!-- My Work Start  -->
+		<section>
+			<div class="container work" id="work">
+				<div class="row">
+					<div class="col-12">
+						<h2>My Work</h2>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp">
+							<img src="img/certificate/c.jpg" alt="" />
+							<div class="overlay">
+								<a href="" target="blank" class="text">Visit</a>
+							</div>
+						</div>
+						<div class="title">C language</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.1s">
+							<img src="img/certificate/css.jpg" alt="" />
+							<div class="overlay">
+								<a href="" target="blank" class="text">Visit</a>
+							</div>
+						</div>
+						<div class="title">CSS</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.2s">
+							<img src="img/certificate/html.jpg" alt="" />
+							<div class="overlay">
+								<a
+									href=""
+									target="blank"
+									class="text"
+									>Visit</a
+								>
+							</div>
+						</div>
+						<div class="title">Html</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.2s">
+							<img src="img/certificate/jquery.jpg" alt="" />
+							<div class="overlay">
+								<a
+									href=""
+									target="blank"
+									class="text"
+									>Visit</a
+								>
+							</div>
+						</div>
+						<div class="title">Jquery</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.2s">
+							<img src="img/certificate/php.jpg" alt="" />
+							<div class="overlay">
+								<a
+									href=""
+									target="blank"
+									class="text"
+									>Visit</a
+								>
+							</div>
+						</div>
+						<div class="title">php</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="project wow fadeInUp" data-wow-delay="0.2s">
+							<img src="img/certificate/responsive.jpg" alt="" />
+							<div class="overlay">
+								<a
+									href=""
+									target="blank"
+									class="text"
+									>Visit</a
+								>
+							</div>
+						</div>
+						<div class="title">Responsive Web Design</div>
+					</div>
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</section>
+		<!-- My Work Ends  -->
+		<!-- Activities Start  -->
+		<!-- <div class="container">
+			<div class="row activities">
+				<div class="col-12">
+					<h2>Activities Chart</h2>
+				</div>
+				<div class="col-12">
+					<codersrank-activity username="sohammanjrekar" branding="false" labels tooltip weeks>
+					</codersrank-activity>
+				</div>
+			</div>
+		</div> -->
+		<!-- Activities Ends  -->
+		<!-- Work Experience Starts  -->
+		<section>
+			<div class="container experience">
+				<div class="row">
+					<div class="col-12">
+						<h2>Education</h2>
+					</div>
+					<div class="col-12">
+						<!--  -->
+						<div class="row">
+							<div class="col-12 col-xl-4 title">
+								<h3><br>
+									S.E. in Computer Engineering</h3>
+								<p>March 2022 - Present</p>
+							</div>
+							<div class="col-12 col-xl-8 company">
+								<div class="box">
+									<h3>Rizvi college of engineering</h3>
+									<ul>
+										<li>💥 I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS ,etc.
+											💥 CGPA:9.5
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<!--  -->
+						<div class="row">
+							<div class="col-12 col-xl-4 title">
+								<h3>Senior Secondary Education</h3>
+								<p>2018 - 2016</p>
+							</div>
+							<div class="col-12 col-xl-8 company">
+								<div class="box">
+									<h3>R.V.Nerurkar jr. college</h3>
+									<ul>
+										<li>💥I have studied science stream subjects like Physics, Chemistry, Mathematics etc.</li>					<li>💥 Percentage: 80%.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<!--  -->
+						<div class="row">
+							<div class="col-12 col-xl-4 title">
+								<h3>Primary Education</h3>
+								<p>2016 - 2006</p>
+							</div>
+							<div class="col-12 col-xl-8 company">
+								<div class="box">
+									<h3>R.V.Nerurkar high school</h3>
+									<ul>
+										<li>💥 I have studied subjects like History, Science, Mathematics etc.</li>
+										<li>💥 Percentage: 90%</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+				
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Work Experience Ends  -->
+		<!-- My Contact Starts  -->
+		<section class="bg">
+			<div class="container contact" id="contact">
+				<div class="row">
+					<div class="col-12">
+						<h2>Contact</h2>
+					</div>
+					<div class="col-12 col-md-8 col-lg-8">
+						<form id="contact" class="form">
+							<h3>Let's Chat</h3>
+							<div class="textarea">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name" name="name" required />
+							</div>
+							<div class="textarea">
+								<label for="">Message</label>
+								<textarea
+									type="text"
+									class="form-control"
+									id="messege"
+									name="messege"
+									required
+								></textarea>
+							</div>
+							<button type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- My Contact Ends  -->
+		<!-- Footer Starts  -->
+		<section>
+			<div class="container-fluid footer">
+				<div class="row">
+					<div class="col-12">
+						<img alt="programmergaurav" src="img/Soham.gif" />
+					</div>
+					<div class="col-12">
+						<div class="soc">
+							<a title="Github profile Link" target="_blank" href="https://github.com/sohammanjrekar">
+								<i class="fab fa-github"></i>
+							</a>
+						</div>
+						<div class="soc">
+							<a
+								title="Facebook profile link"
+								target="_blank"
+								href="https://www.facebook.com/"
+							>
+								<i class="fab fa-facebook"></i>
+							</a>
+						</div>
+						<div class="soc">
+							<a
+								title="Instagram profile link"
+								target="_blank"
+								href="https://www.instagram.com/mrsohammanjrekar/"
+							>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+						<div class="soc">
+							<a
+								title="linkedin profile link"
+								target="_blank"
+								href="https://www.linkedin.com/in/soham-manjrekar-279a71184/"
+							>
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<span style="color: hsl(19, 100%, 50%);">Soham Manjrekar &copy;2022</span>
+			</div>
+		</section>
+		<!-- Footer Ends  -->
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/siema.min.js"></script>
+		<script src="js/typed.min.js"></script>
+		<script src="js/codersrank-activity.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
